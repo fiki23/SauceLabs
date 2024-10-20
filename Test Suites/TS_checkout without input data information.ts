@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS_checkout without input data information</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>17168783-9df2-4aab-8db8-322aee5a9814</testSuiteGuid>
+   <testCaseLink>
+      <guid>0addfce1-36ab-4605-9d59-6b5544b5d4b0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC001_valid Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>567b6b95-4591-4f23-af6f-f0763be01ccc</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
+         </iterationEntity>
+         <testDataId>Data Files/loginData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>567b6b95-4591-4f23-af6f-f0763be01ccc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
+         <variableId>e11208e8-5cf1-40be-81dc-a388c20a16c1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>567b6b95-4591-4f23-af6f-f0763be01ccc</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>54bc495a-2bb2-4a89-9be5-be548f44e6cc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c08f4549-bdf3-4a33-9481-58da361efe46</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8f5743bb-71eb-4e72-9b79-018e913d2eff</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC004_add cart in home successfully</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>df773713-1070-4142-95ca-98928f089bd9</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
+         </iterationEntity>
+         <testDataId>Data Files/productData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>df773713-1070-4142-95ca-98928f089bd9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ProductName</value>
+         <variableId>ff8d8601-49d7-4a5a-8644-6ef5aaf8fd92</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f20740da-01c9-47b2-a9fd-4439ac28b775</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC007_checkout not input information</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>621a660a-3468-41f6-a425-5573701ab3aa</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8aaf0dfb-ff03-402d-94dc-066361dde1f2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>da58d0d8-14f8-43b7-a50f-ab8d30cacc82</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

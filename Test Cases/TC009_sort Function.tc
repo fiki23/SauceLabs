@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC009_sort Function</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f1a2c453-ec95-4c88-bcc3-a89498f59684</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bfea148d-4ab7-4dc9-b0d2-7a453b352af1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bfea148d-4ab7-4dc9-b0d2-7a453b352af1</id>
+      <masked>false</masked>
+      <name>sortingOption</name>
+   </variable>
+</TestCaseEntity>

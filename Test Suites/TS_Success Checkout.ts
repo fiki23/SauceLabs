@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS_Success Checkout</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>b3a9572c-1397-407a-856c-bffc93b7950a</testSuiteGuid>
+   <testCaseLink>
+      <guid>a4387c95-ffca-4f16-812a-d0cba45d0e9a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <iterationNameVariable>
+         <defaultValue>''</defaultValue>
+         <description></description>
+         <id>e11208e8-5cf1-40be-81dc-a388c20a16c1</id>
+         <masked>false</masked>
+         <name>username</name>
+      </iterationNameVariable>
+      <testCaseId>Test Cases/TC001_valid Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>ebd019f1-ddbb-4cd6-9de8-dc3d017f3abf</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
+         </iterationEntity>
+         <testDataId>Data Files/loginData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>ebd019f1-ddbb-4cd6-9de8-dc3d017f3abf</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
+         <variableId>e11208e8-5cf1-40be-81dc-a388c20a16c1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ebd019f1-ddbb-4cd6-9de8-dc3d017f3abf</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>54bc495a-2bb2-4a89-9be5-be548f44e6cc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c08f4549-bdf3-4a33-9481-58da361efe46</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8e301c80-6a5d-473a-8257-51ca78791d2c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC009_sort Function</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0e61b51e-562a-44c4-b250-d4daae61aaec</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>3</value>
+         </iterationEntity>
+         <testDataId>Data Files/sortData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>0e61b51e-562a-44c4-b250-d4daae61aaec</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>sort</value>
+         <variableId>bfea148d-4ab7-4dc9-b0d2-7a453b352af1</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6c38596a-6ef5-4c4c-a88a-7b906049d292</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC004_add cart in home successfully</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>f305e7a7-f1c3-4ed8-b751-335092224ac4</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>2</value>
+         </iterationEntity>
+         <testDataId>Data Files/productData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>f305e7a7-f1c3-4ed8-b751-335092224ac4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ProductName</value>
+         <variableId>ff8d8601-49d7-4a5a-8644-6ef5aaf8fd92</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c2a47e9f-082d-41b9-a8e5-2be91e88b5af</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <iterationNameVariable>
+         <defaultValue>''</defaultValue>
+         <description></description>
+         <id>3de70def-5aba-4a0e-814e-ca2cf8f2dc40</id>
+         <masked>false</masked>
+         <name>firstName</name>
+      </iterationNameVariable>
+      <testCaseId>Test Cases/TC006_checkout function succesfully</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>4bd71ec3-3165-4063-ad17-6ebf1f3629c0</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
+         </iterationEntity>
+         <testDataId>Data Files/userInfo</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>4bd71ec3-3165-4063-ad17-6ebf1f3629c0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>firstName</value>
+         <variableId>3de70def-5aba-4a0e-814e-ca2cf8f2dc40</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4bd71ec3-3165-4063-ad17-6ebf1f3629c0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>lastName</value>
+         <variableId>2a34529b-6d20-426b-bc58-27bb27262db7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4bd71ec3-3165-4063-ad17-6ebf1f3629c0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>zipCode</value>
+         <variableId>9230d1b4-3efb-4b65-b9ff-893e7f173347</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0d4d5cff-5efd-4c2c-8c08-1e0bbfe472ac</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC010_Log out function</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+</TestSuiteEntity>
