@@ -22,22 +22,22 @@ import com.kms.katalon.core.util.KeywordUtil
 
 //define screenshot
 def takeScreenshot(String filenamePrefix) {
-	String screenshotPath = "C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/" + filenamePrefix + "_" + ".png"
+	String screenshotPath = "C:/Users/ficky/git/SauceLabs/Screenshot/TC008_checkout with empty chart/" + filenamePrefix + ".png"
 }
 
 //open cart
 WebUI.click(findTestObject('Object Repository/menu/button_Cart'))
-WebUI.takeScreenshot('TC010_checkout with empty chart/open_cart.png')
+WebUI.takeScreenshot('open_cart')
 
 //click button checkout
 WebUI.click(findTestObject('Object Repository/menu/button_Checkout'))
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC010_checkout with empty chart/information_page.png')
+WebUI.takeScreenshot('information_page')
 
 //Input data information
 WebUI.setText(findTestObject('Object Repository/Checkout/input_FirstName'), firstName)
 WebUI.setText(findTestObject('Object Repository/Checkout/input_LastName'), lastName)
 WebUI.setText(findTestObject('Object Repository/Checkout/input_ZipCode'), zipCode)
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC010_checkout with empty chart/input_data.png')
+WebUI.takeScreenshot('input_data')
 
 //print console
 println('Currently input first name: ' + firstName)
@@ -46,11 +46,11 @@ println('Currently input zipcode: ' + zipCode)
 
 //checkout
 WebUI.click(findTestObject('Object Repository/Checkout/button_Continue'))
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC010_checkout with empty chart/checkoutpage.png')
+WebUI.takeScreenshot('checkoutpage')
 
 //finish button
 WebUI.click(findTestObject('Object Repository/checkout/button_Finish'))
 
 //assertion
 WebUI.verifyElementPresent(findTestObject('Object Repository/checkout/text_finishOrder'), 10)
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC010_checkout with empty chart/successcheckout.png')
+WebUI.takeScreenshot('successcheckout')

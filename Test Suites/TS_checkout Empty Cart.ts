@@ -49,7 +49,7 @@
       <guid>e6a8ebd3-ad79-442e-b45c-57f878e00479</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC008_checkout with empty chart</testCaseId>
+      <testCaseId>Test Cases/TC008_checkout with empty cart</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>d1c151f0-0db3-42ef-ba65-dec0f1b1e8d9</id>

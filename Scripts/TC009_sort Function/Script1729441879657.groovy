@@ -21,7 +21,7 @@ import com.kms.katalon.core.util.KeywordUtil
 //sort dropdown
 WebUI.click(findTestObject('Object Repository/product/SortDropdown'))
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC006_sort Function/sort_button.png')
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC009_sort Function/sort_button.png')
 
 //get sorting option
 String sortingOption = sortingOption
@@ -33,7 +33,7 @@ TestObject selectDropdown = findTestObject('Object Repository/product/sortValue'
 WebUI.selectOptionByValue(selectDropdown, sortingOption, false)
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC006_sort Function/dropdown_option.png')
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC009_sort Function/dropdown_option.png')
 
 //assertion
 WebUI.verifyOptionSelectedByValue(selectDropdown, sortingOption, false, 5)

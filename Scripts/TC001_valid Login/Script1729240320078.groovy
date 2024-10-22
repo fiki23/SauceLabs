@@ -16,19 +16,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 //open browser
-	WebUI.openBrowser('https://www.saucedemo.com/v1/index.html')
-	//screenshot
-	WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC005_valid Login/open_saucelabs.png')
+WebUI.openBrowser('https://www.saucedemo.com/v1/index.html')
+
+//screenshot
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC001_valid Login/open_saucelabs.png')
+
 //input credentials
-	WebUI.setText(findTestObject('Object Repository/Login/input_Username'), username)
-	WebUI.setText(findTestObject('Object Repository/Login/input_Password'), password)
-	//screenshot
-	WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC005_valid Login/input_credentials.png')
+WebUI.setText(findTestObject('Object Repository/Login/input_Username'), username)
+
+WebUI.setText(findTestObject('Object Repository/Login/input_Password'), password)
+
+//screenshot
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC001_valid Login/input_credentials.png')
+
 //login button
-	WebUI.click(findTestObject('Object Repository/Login/button_Login'))
-	//screenshot
-	WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/success_login.png')
+WebUI.click(findTestObject('Object Repository/Login/button_Login'))
+
+//screenshot
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC001_valid Login/success_login.png')
 

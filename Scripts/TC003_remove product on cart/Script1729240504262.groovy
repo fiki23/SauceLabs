@@ -21,12 +21,12 @@ import com.kms.katalon.core.util.KeywordUtil
 //open cart
 WebUI.click(findTestObject('Object Repository/menu/button_Cart'))
 	//screenshot
-	WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC008_remove product on cart/removecart.png')
+	WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC003_remove product on cart/opencart.png')
 
 //Remove cart
 WebUI.waitForElementPresent(findTestObject('Object Repository/product/button_removeCart', [('productName') : productName]), 10)
 WebUI.click(findTestObject('Object Repository/product/button_removeCart', [('productName') : productName]))
 	//screenshot
-	WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC008_remove product on cart/removecart.png')
+	WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC003_remove product on cart/removecart.png')
 println('Removed product: ' + productName)
 

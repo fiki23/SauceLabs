@@ -22,19 +22,19 @@ import com.kms.katalon.core.util.KeywordUtil
 WebUI.openBrowser('https://www.saucedemo.com/v1/index.html')
 
 // screenshot
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC003_invalid Login/openBrowser.png')
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC002_invalid Login/openBrowser.png')
 
 //Enter username and password
 WebUI.setText(findTestObject('Object Repository/Login/input_Username'), username)
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC003_invalid Login/usernameEntered.png')
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC002_invalid Login/usernameEntered.png')
 
 WebUI.setText(findTestObject('Object Repository/Login/input_Password'), password)
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC003_invalid Login/passwordEntered.png')
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC002_invalid Login/passwordEntered.png')
 
 //click login button
 WebUI.click(findTestObject('Object Repository/Login/button_Login'))
 // screenshot
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC003_invalid Login/loginClicked.png')
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC002_invalid Login/loginClicked.png')
 
 // dynamic test object
 String expectedMessage = errorMessage
@@ -44,7 +44,7 @@ TestObject dynamicErrorMessage = findTestObject('Object Repository/Login/errorMe
 boolean isErrorPresent = WebUI.verifyElementPresent(dynamicErrorMessage, 10)
 if (isErrorPresent) {
     // screenshot
-    WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC003_invalid Login/errorMessagePresent.png')
+    WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC002_invalid Login/errorMessagePresent.png')
 
     String actualErrorMessage = WebUI.getText(dynamicErrorMessage)
     println('Expected Error Message from Data: ' + expectedMessage)
@@ -56,7 +56,7 @@ if (isErrorPresent) {
         WebUI.verifyMatch(actualErrorMessage, expectedMessage, false)
     } else {
         // screenshot
-        WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC003_invalid Login/matchingErrorMessage.png')
+        WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC002_invalid Login/matchingErrorMessage.png')
         println('Success: The error message matches as expected.')
     }
 }

@@ -22,8 +22,8 @@ import com.kms.katalon.core.util.KeywordUtil
 //open side menu
 WebUI.click(findTestObject('Object Repository/menu/button_sideMenu'))
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC004_Log out function/sidemenu.png')
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC010_Log out function/sidemenu.png')
 //log out
 WebUI.click(findTestObject('Object Repository/menu/button_LogOut'))
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC004_Log out function/logout.png')
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC010_Log out function/logout.png')

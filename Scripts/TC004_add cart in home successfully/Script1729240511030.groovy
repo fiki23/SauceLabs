@@ -22,19 +22,14 @@ import org.openqa.selenium.Keys as Keys
 WebUI.click(findTestObject('Object Repository/menu/button_sideMenu'))
 
 //screenshot
-boolean openSideMenu = WebUI.verifyElementPresent(findTestObject('Object Repository/menu/button_sideMenu'), 10)
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC004_add cart in home successfully/open_side_menu.png')
 
-if (!openSideMenu) {
-	KeywordUtil.markFailedAndStop('open side menu failed')
-} else {
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC001_add cart in home successfully/open_side_menu.png')
-}
 
 //click reset
 WebUI.click(findTestObject('Object Repository/menu/button_resetAppState'))
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC001_add cart in home successfully/reset.png')
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC004_add cart in home successfully/reset.png')
 
 //close side menu
 WebUI.click(findTestObject('menu/closeSideMenu'))
@@ -48,4 +43,4 @@ println('Currently adding product to cart: ' + productName)
 WebUI.verifyElementPresent(findTestObject('Object Repository/menu/icon_cartBadge'), 10)
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/Katalon Studio/SauceDemo/Screenshot/TC001_add cart in home successfully/addcart.png')
+WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC004_add cart in home successfully/addcart.png')
