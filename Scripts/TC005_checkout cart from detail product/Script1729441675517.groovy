@@ -23,12 +23,12 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/product/inventory_
 WebUI.click(findTestObject('Object Repository/product/inventory_product', [('productName') : productName]))
 println('Currently clicking product: ' + productName)
 	//screenshot
-	WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC005_checkout cart from detail product/home.png')
+	WebUI.takeScreenshot(GlobalVariable.baseUrl + 'Screenshot/TC005_checkout cart from detail product/home.png')
 
 //add to cart
 WebUI.click(findTestObject('Object Repository/product/button_AddToCart_productDetail'))
 	//screenshot
-	WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC005_checkout cart from detail product/product_detail.png')
+	WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC005_checkout cart from detail product/product_detail.png')
 
 //assertion
 WebUI.verifyElementPresent(findTestObject('Object Repository/menu/icon_cartBadge'), 10)

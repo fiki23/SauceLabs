@@ -23,14 +23,14 @@ import com.kms.katalon.core.util.KeywordUtil
 WebUI.click(findTestObject('Object Repository/menu/button_Cart'))
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC006_checkout function succesfully/open_cart.png')
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC006_checkout function succesfully/open_cart.png')
 
 
 //click button checkout
 WebUI.click(findTestObject('Object Repository/menu/button_Checkout'))
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC006_checkout function succesfully/information_page.png')
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC006_checkout function succesfully/information_page.png')
 
 
 //Input data information
@@ -39,7 +39,7 @@ WebUI.setText(findTestObject('Object Repository/Checkout/input_LastName'), lastN
 WebUI.setText(findTestObject('Object Repository/Checkout/input_ZipCode'), zipCode)
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC006_checkout function succesfully/input_data.png')
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC006_checkout function succesfully/input_data.png')
 
 //print console
 println('Currently input first name: ' + firstName)
@@ -49,7 +49,7 @@ println('Currently input zipcode: ' + zipCode)
 //checkout
 WebUI.click(findTestObject('Object Repository/Checkout/button_Continue'))
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC006_checkout function succesfully/checkoutpage.png')
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC006_checkout function succesfully/checkoutpage.png')
 
 //retrieve product price
 def productPriceText = WebUI.getText(findTestObject('Object Repository/checkout/ProductPrice1'))
@@ -86,4 +86,4 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/checkout/text_finis
 //screenshot
 boolean finishorder = WebUI.verifyElementPresent(findTestObject('Object Repository/checkout/text_finishOrder'), 10)
 	//screenshot
-    WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC006_checkout function succesfully/successcheckout.png')
+    WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC006_checkout function succesfully/successcheckout.png')

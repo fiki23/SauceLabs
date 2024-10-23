@@ -22,7 +22,9 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 WebUI.openBrowser('https://www.saucedemo.com/v1/index.html')
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC001_valid Login/open_saucelabs.png')
+//WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC001_valid Login/open_saucelabs.png')
+
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC001_valid Login/open_saucelabs.png')
 
 //input credentials
 WebUI.setText(findTestObject('Object Repository/Login/input_Username'), username)
@@ -30,11 +32,11 @@ WebUI.setText(findTestObject('Object Repository/Login/input_Username'), username
 WebUI.setText(findTestObject('Object Repository/Login/input_Password'), password)
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC001_valid Login/input_credentials.png')
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC001_valid Login/input_credentials.png')
 
 //login button
 WebUI.click(findTestObject('Object Repository/Login/button_Login'))
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC001_valid Login/success_login.png')
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC001_valid Login/success_login.png')
 

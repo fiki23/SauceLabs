@@ -22,14 +22,14 @@ import org.openqa.selenium.Keys as Keys
 WebUI.click(findTestObject('Object Repository/menu/button_sideMenu'))
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC004_add cart in home successfully/open_side_menu.png')
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC004_add cart in home successfully/open_side_menu.png')
 
 
 //click reset
 WebUI.click(findTestObject('Object Repository/menu/button_resetAppState'))
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC004_add cart in home successfully/reset.png')
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC004_add cart in home successfully/reset.png')
 
 //close side menu
 WebUI.click(findTestObject('menu/closeSideMenu'))
@@ -43,4 +43,4 @@ println('Currently adding product to cart: ' + productName)
 WebUI.verifyElementPresent(findTestObject('Object Repository/menu/icon_cartBadge'), 10)
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC004_add cart in home successfully/addcart.png')
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC004_add cart in home successfully/addcart.png')

@@ -24,17 +24,17 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 //open cart
 WebUI.click(findTestObject('Object Repository/menu/button_Cart'))
 	//screenshot
-	WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC007_checkout not input information/open_cart.png')
+	WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC007_checkout not input information/open_cart.png')
 
 //click button checkout
 WebUI.click(findTestObject('Object Repository/menu/button_Checkout'))
 	//screenshot
-	WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC007_checkout not input information/information_page.png')
+	WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC007_checkout not input information/information_page.png')
 
 //checkout page
 WebUI.click(findTestObject('Object Repository/Checkout/button_Continue'))
 	//screenshot
-	WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC007_checkout not input information/checkout_page.png')
+	WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC007_checkout not input information/checkout_page.png')
 
 // define
 TestObject errorElement = findTestObject('Object Repository/checkout/errorMessage_Information')
@@ -43,5 +43,5 @@ TestObject errorElement = findTestObject('Object Repository/checkout/errorMessag
 WebUI.verifyElementText(errorElement, 'Error: First Name is required')
 
 //screenshot
-WebUI.takeScreenshot('C:/Users/ficky/git/SauceLabs/Screenshot/TC007_checkout not input information/error_information_page.png')
+WebUI.takeScreenshot(GlobalVariable.baseUrl + 'TC007_checkout not input information/error_information_page.png')
 
