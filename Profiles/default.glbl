@@ -4,4 +4,9 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:/Users/ficky/git/SauceLabs/Screenshot/'</initValue>
+      <name>baseUrl</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
